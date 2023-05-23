@@ -18,7 +18,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 <app-ui-fetch-component
   [httpRequestState]="httpRequestState$ | async"
   [message]="message$ | async"
-  title="Example 5: RxJs (user triggered + auto request cancellation by switchMap)"
+  title="Example 5: RxJs (user triggered + auto request cancellation by switchMap())"
   [hasCancelButton]="true"
   (onFetchData)="fetchData($event)"
   (onCancel)="cancelAllRequests()"
